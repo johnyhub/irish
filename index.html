@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>1.St Irish Pub in Belgrade</title>
+  <link rel="icon" href="img/tri.jpg" type="img/jpg" sizes="30x20">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+<!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+ <script src="js/jquery-3.1.1.min.js"></script>
+<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+<script src="js/bootstrap.min.js"></script>
+<!--   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+  <style>
+
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+     font-family: Lato;
+       background-image: url(img/f.jpg);
+      background-position: center;
+      background-size: cover;
+      overflow: hidden;
+  }
+      h1{
+          color: #eaecef;
+    text-shadow: 2px 2px 5px #000000;
+    
+    position: absolute;
+    
+    right: 100px;
+    top: 0;
+    font-size: 31px;
+    font-family: -webkit-body;
+              
+      }  
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+      text-align: center;
+  }
+      h3 {
+         font-size: 17px;
+    line-height: 1.5em;
+      text-align: justify; 
+      }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+      text-align: justify;
+  }  
+  .jumbotron {
+     
+      background-color: transparent;
+      color: #fff;
+      padding: 200px 100px;
+      font-family: Montserrat, sans-serif;
+      
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  
+  .navbar {
+      margin-bottom: 0;
+     background: black; 
+      background-image: url(img/navbar.jpg);
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+      bottom: 24px;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+      .navbar-brand {
+          padding-top: 4px;
+          
+      }  
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: black !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+      .header {
+          position: relative;
+      }
+      footer {
+          background-color:transparent;
+/*          background-image: url(img/footer.jpg);*/
+          bottom: 0px;
+          position: fixed;
+          width: 100%;
+      }
+      footer p{
+          color: gainsboro;
+          text-align: right;
+          margin: 0;
+          
+      }
+      .logo{
+          width: 163px;
+          margin-left: 102px;
+          margin-top: 15px;
+      }
+      .slika{
+          background-image: url(img/naslovna.jpg);
+          background-position: cover;
+          background-repeat: no-repeat;
+          height: 600px;
+          margin-top: -50px;
+          
+      }
+      .header-container {
+          width: 100%;
+          height: 900px;
+          border-left: none;
+          border-right: none;
+          position: relative;
+          padding: 0;
+          margin-top: -139px;
+      }
+      .video container{
+          position: absolute;
+          top: 0%;
+          left: 0%;
+          height: 100%;
+          height: 100%;
+          overflow: hidden;
+      }
+      video{
+          position: absolute;
+          z-index: -1;
+          opacity: 0.95;
+          width: 100%;
+      }
+     
+
+      
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+      @media screen and (max-width: 1000px) {
+          .jumbotron{
+              padding: 100px 25px;
+          }
+          .jumbotron h1 {
+              font-size: 60px;
+          }
+          .jumbotron img {
+              width: 250px;
+          }
+      }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+      .jumbotron img{ 
+          max-width: 100%; max-height: 100%; display: block; margin: auto auto; float: none !important;
+      }
+      .jumbotron h1{
+          text-align: center;
+      }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+      .shadow {
+            background-color: transparent;
+            box-shadow: 0px 0px 30px 3px antiquewhite;
+        }
+      #abaut p {
+          text-align: justify;
+      }
+      .custom {
+          width: 50%;
+          top: 10%;
+          background-color: forestgreen;
+          
+      }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                      
+      </button>
+      
+     
+       
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-left">
+       <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us </a></li>
+        <li><a href="#gallery">Manu</a></li>
+        <li><a href="galery.html">Gallery</a></li>
+        <li><a href="#partners">News </a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="header navbar-fixed-top">
+  <img src="img/Untitled.png" class="logo img img-responsive">
+    <h1>The <span style="font-size: 45px;color: darkorange;font-weight: bolder;">1</span>st in Belegrade</h1>
+</div>
+ 
+   
+
+
+
+ 
+
+ 
+    
+    
+    
+
+<!-- pozadina -->
+<!--
+<div class=" slika container-fluid"> 
+</div>
+-->
+<!-- pozadina -->
+<div class="header-container"><!-- video -->
+<div class="video-continer">
+    <video id ="player" preload = "true" autoplay = "autoplay" loop = "loop" poster = "img/naslovna.jpg">
+       <source src="video/The%20Three%20Carrots%20Irish%20pub%20Belgrade-%20Guinness.mp4" type="video/mp4">
+        <source src="video/The%20Three%20Carrots%20Irish%20pub%20Belgrade-%20Guinness.webm" type="video/webm">
+         <source src="video/The%20Three%20Carrots%20Irish%20pub%20Belgrade-%20Guinness.mp4" type="video/mp4">
+    </video>
+     <script>
+        var video = document.getElementById('player');
+        video.volume = 0;
+        </script>
+     </div>
+        </div>
+<!-- Video end -->
+
+
+
+  <footer>
+     <p> © 2007 • Irish pub-The Three Carrots. All rights reserved.
+</p>
+</footer>
+
+</body>
+</html>
